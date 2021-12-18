@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas7|JavaScript</title>
+    <script>
+        function hitung() {
+            const phi = 3.14;
+            let jari = document.getElementById("bil1").value;
+            console.log("jari-jari : " + jari);
+            let luas = phi + jari * jari;
+            let kel = 2.0 * phi * jari;
+            console.log("luas : " + luas);
+            console.log("kel : " + kel);
+            let hasilnya = document.getElementById("hasil");
+            hasilnya.innerHTML = "Luas : " + luas + "\nKeliling : " + kel;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Luas & Keliling Lingkaran</h3>
+    Masukan jari-jari lingkaran :
+    <input type="number" value="" size="10" id="bil1">
+    <br>
+    <button onclick="hitung()">hitung</button>
+    <br>Hasil : <span id="hasil"></span>
+</body>
+</html>
